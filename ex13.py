@@ -32,17 +32,36 @@ def calculateAVG(list_data2):
         return  total3/ list_data2.__len__()
 
 
-if __name__ == '__main__':
-    # print(calculateSum([]) == 0)
-    # print(calculateSum([2,4,6,8,10]) == 30)
-    # print(calculateProdcut([]) == 0)
-    # print(calculateProdcut([2,4,6,8,10]) == 3840)
+def calculateMedian(list_median):
+    if list_median == []:
+        return None
+    list_median.sort()
+    middleIndex = len(list_median) // 2
 
+    if len(list_median) % 2 == 0:
+        return (list_median[middleIndex] + list_median[middleIndex-1])/2
+    else:
+        return list_median[middleIndex]
+
+if __name__ == '__main__':
+    #Calculate Sum
+    print(calculateSum([]) == 0)
+    print(calculateSum([2,4,6,8,10]) == 30)
+
+    #Calculate Product
+    print(calculateProdcut([]) == 0)
+    print(calculateProdcut([2,4,6,8,10]) == 3840)
+
+    #Calculate Average
     print(calculateAVG([1,2,3]) == 2)
     print(calculateAVG([1,2,3,1,2,3,1,2,3]) == 2)
     print(calculateAVG([12,20,37]) == 23)
     print(calculateAVG([0,0,0,0,0,0,0,]) == 0)
-    print(calculateAVG([]) == [])
-    print(medianCal([3,7,10,4,1,9,6,5,2,8]) == 55)
+
+    #Calculate Median
+    print(calculateMedian([]) == None)
+    print(calculateMedian([1,2,3]) == 2)
+    print(calculateMedian([3,7,10,4,1,9,6,5,2,8]) == 5.5)
+    print(calculateMedian([3,7,10,4,1,9,6,2,8]) == 6)
 
 #%%
