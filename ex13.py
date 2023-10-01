@@ -37,7 +37,6 @@ if __name__ == '__main__':
     # print(calculateSum([2,4,6,8,10]) == 30)
     # print(calculateProdcut([]) == 0)
     # print(calculateProdcut([2,4,6,8,10]) == 3840)
-
     print(calculateAVG([1,2,3]) == 2)
     print(calculateAVG([1,2,3,1,2,3,1,2,3]) == 2)
     print(calculateAVG([12,20,37]) == 23)
