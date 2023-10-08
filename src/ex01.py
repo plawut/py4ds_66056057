@@ -23,10 +23,9 @@ def know_my_name():
         str: The name entered by the user.
     """
     # FIX : complete this
-    name = 'Worajedt'
+
+    name = input("Enter you name")
     return  name
-
-
 def say_hi(name):
     """
     Print a greeting message with the given name.
