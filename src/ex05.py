@@ -16,7 +16,7 @@ def fizz_buzz(num):
     Returns:
         str or int: The result of the FizzBuzz calculation.
     """
-    # TODO : complete this
+    # FIX : complete this
     if (num%3 == 0) and (num%5 == 0):
         return "FizzBuzz"
     elif num%3 ==0:
