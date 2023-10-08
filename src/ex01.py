@@ -7,8 +7,9 @@ def greeting():
     """
     Function to print a greeting message in Thai language.
     """
-    # TODO : complete this
-    pass
+    # FIX : complete this
+    print('สวัสดีชาวลาดกระบัง')
+
 
 
 def know_my_name():
@@ -21,16 +22,17 @@ def know_my_name():
     Returns:
         str: The name entered by the user.
     """
-    # TODO : complete this
-    pass
+    # FIX : complete this
+    name = 'Worajedt'
+    return  name
 
 
-def say_hi(name=None):
+def say_hi(name):
     """
     Print a greeting message with the given name.
 
     Args:
         name (str, optional): The name to greet. Defaults to None.
     """
-    # TODO : complete this
-    pass
+    # FIX : complete this
+    return print(f'สวัสดีคุณ{name}')
