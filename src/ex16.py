@@ -3,7 +3,7 @@ Exercise 16
 """
 
 
-def mode(params):
+def mode(num_list):
     """
     Calculate the mode of a list of numbers.
 
@@ -13,4 +13,11 @@ def mode(params):
     Returns:
     - int or None: The mode of the list, or None if the list is empty.
     """
-    pass
+    #FIX
+    check = []
+    for i in num_list:
+        if i not in check:
+            check.append(i)
+        else:
+            return i
+
