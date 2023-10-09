@@ -13,5 +13,5 @@ def is_leap_year(year):
     Returns:
         bool: True if the year is a leap year, False otherwise.
     """
-    # TODO : complete this
-    pass
+    # FIX : complete this
+    return  ((year%4 == 0) and (year%100 != 0)) or ((year%4 == 0) and (year%100 == 0) and ((year%400 == 0)))
