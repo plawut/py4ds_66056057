@@ -15,5 +15,6 @@ def roll_dice(num_of_dice):
         int: The total sum of the dice rolls.
     """
     #FIX
-    sum = 6*num_of_dice
+    k = random.randint(1,6)
+    sum = k*num_of_dice
     return sum
