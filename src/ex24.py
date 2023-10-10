@@ -16,5 +16,22 @@ def get_time_every_15_min():
     Returns:
         str: The generated time string.
     """
-    # TODO : complete this
-    pass
+    # FIX : complete this
+    hour_list = [12,1,2,3,4,5,6,7,8,9,10,11]
+    for i in ['am','pm']:
+        if i == 'am':
+            for j in hour_list:
+                for k in range(0,46,15):
+                    if k == 0:
+                        print(f'{j}:{k}0 {i}')
+                    else:
+                        print(f'{j}:{k} {i}')
+        else:
+            for j in hour_list:
+                for k in range(0,46,15):
+                    if k == 0:
+                        print(f'{j}:{k}0 {i}')
+                    else:
+                        print(f'{j}:{k} {i}')
+
+
