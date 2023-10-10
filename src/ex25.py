@@ -28,4 +28,15 @@ def multiplication_table(param, param1 = 11):
     """
     print('  | 1  2  3  4  5  6  7  8  9 10')
     print('--+------------------------------')
-    # TODO : complete this
+    for i in range(1,11):
+        if i >= 10:
+            print(f'{i}|', end = '')
+        else:
+            print(f' {i}|', end = '')
+        for j in range(1,11):
+            if i*j >= 10:
+                print(f' {j*i}', end = '')
+            else:
+                print(f'  {j*i}', end = '')
+        print(' ')
+
